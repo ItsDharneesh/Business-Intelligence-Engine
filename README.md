@@ -9,7 +9,7 @@
 The **Business Intelligence Engine** is a production-ready AI agent that:
 
 - Connects to **live Monday.com boards**
-- Uses **GPT-4o tool-calling** to interpret founder-level questions
+- Uses **GPT-5.2 tool-calling** to interpret founder-level questions
 - Executes **deterministic pandas analytics**
 - Prevents hallucinated numbers
 - Displays full execution trace for transparency

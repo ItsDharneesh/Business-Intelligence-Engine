@@ -1,9 +1,13 @@
-from dotenv import load_dotenv
 import os
+import streamlit as st
 
-load_dotenv()
+def get_secret(key):
+    try:
+        return st.secrets[key]
+    except Exception:
+        return os.getenv(key)
 
-MONDAY_API_KEY = os.getenv("MONDAY_API_KEY")
-DEALS_BOARD_ID = os.getenv("DEALS_BOARD_ID")
-WORK_ORDERS_BOARD_ID = os.getenv("WORK_ORDERS_BOARD_ID")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = get_secret("OPENAI_API_KEY")
+MONDAY_API_KEY = get_secret("MONDAY_API_KEY")
+DEALS_BOARD_ID = get_secret("DEALS_BOARD_ID")
+WORK_ORDERS_BOARD_ID = get_secret("WORK_ORDERS_BOARD_ID")

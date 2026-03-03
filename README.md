@@ -75,7 +75,7 @@ Business-Intelligence-Engine/
 ## 📌 Core Components
 
 ### 🧠 `agent_core.py`
-- Handles GPT-4o tool selection
+- Handles GPT-5.2 tool selection
 - Sends tool schema to LLM
 - Executes selected backend tool
 - Sends results back for grounded summary
@@ -128,12 +128,12 @@ All metrics computed via pandas — never by the LLM.
 ## ⚙️ How It Works
 
 1. User asks a question.
-2. GPT-4o selects the correct tool.
+2. GPT-5.2 selects the correct tool.
 3. Backend fetches live data.
 4. Data is normalized and filtered.
 5. Deterministic metrics are computed.
 6. Results are returned to GPT-4o.
-7. GPT-4o generates a grounded executive summary.
+7. GPT-5.2 generates a grounded executive summary.
 8. Full trace is displayed.
 
 ---

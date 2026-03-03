@@ -4,6 +4,10 @@
 
 ---
 
+## 🚀 Live Link for the Project
+
+[🔗 Open Live Streamlit App](https://business-intelligence-engine-p4yhqtmlz3flffdhcx9kmt.streamlit.app/)
+
 ## 🚀 Project Overview
 
 The **Business Intelligence Engine** is a production-ready AI agent that:
